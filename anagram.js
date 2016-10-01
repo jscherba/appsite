@@ -26,6 +26,7 @@ function CheckAnagram(){
 
 		if(wordOne.split("").sort().join("") === wordTwo.split("").sort().join("")){
 			document.getElementById("answer").value = "These strings are anagrams!";
+			console.log(document.getElementById("answer").value);
 			return true;
 		}
 	}
