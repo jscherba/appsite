@@ -3,8 +3,8 @@
 
 function CheckAnagram(){
 
-	var wordOne = document.getElementbyId("wordOne").value,
-		wordTwo = document.getElementbyId("wordTwo").value;
+	var wordOne = document.getElementById("wordOne").value,
+		wordTwo = document.getElementById("wordTwo").value;
 
 	
 	if(wordOne === '' || wordTwo === ''){
