@@ -3,19 +3,19 @@
 
 function CheckAnagram(){
 
-	var wordOne = document.getElementbyID("wordOne").value,
-		wordTwo = document.getElementbyID("wordTwo").value;
+	var wordOne = document.getElementbyId("wordOne").value,
+		wordTwo = document.getElementbyId("wordTwo").value;
 
 	
 	if(wordOne === '' || wordTwo === ''){
-		document.getElementByID("answer").value = "Whoops! Please enter two strings.";
+		document.getElementById("answer").value = "Whoops! Please enter two strings.";
 		return false;
 	}
 	
 
 	
 	else if (/[a-zA-Z]/.test(wordOne) == false || /[a-zA-Z]/.test(wordTwo) == false) {
-			document.getElementByID("answer").value = "Please only enter letters in your strings!";
+			document.getElementById("answer").value = "Please only enter letters in your strings!";
 			return false;
 	}
 	
@@ -23,7 +23,7 @@ function CheckAnagram(){
 	else {
 
 		if(wordOne.split("").sort().join("") === wordTwo.split("").sort().join("")){
-			document.getElementByID("answer").value = "These strings are anagrams!";
+			document.getElementById("answer").value = "These strings are anagrams!";
 			return true;
 		}
 	}
