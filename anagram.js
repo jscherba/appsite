@@ -6,6 +6,8 @@ function CheckAnagram(){
 	var wordOne = document.getElementById("wordOne").value,
 		wordTwo = document.getElementById("wordTwo").value;
 
+	console.log(wordOne);
+	console.log(wordTwo);
 	
 	if(wordOne === '' || wordTwo === ''){
 		document.getElementById("answer").value = "Whoops! Please enter two strings.";
