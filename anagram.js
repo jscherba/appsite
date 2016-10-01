@@ -8,14 +8,14 @@ function CheckAnagram(){
 
 	
 	if(wordOne === '' || wordTwo === ''){
-		document.getElementByID("answer").value = "Whoops! Please enter two strings.";
+		document.getElementByID("answer").innerHTML = "Whoops! Please enter two strings.";
 		return false;
 	}
 	
 
 	
 	else if (/[a-zA-Z]/.test(wordOne) == false || /[a-zA-Z]/.test(wordTwo) == false) {
-			document.getElementByID("answer").value = "Please only enter letters in your strings!";
+			document.getElementByID("answer").innerHTML = "Please only enter letters in your strings!";
 			return false;
 	}
 	
@@ -23,7 +23,7 @@ function CheckAnagram(){
 	else {
 
 		if(wordOne.split("").sort().join("") === wordTwo.split("").sort().join("")){
-			document.getElementByID("answer").value = "These strings are anagrams!";
+			document.getElementByID("answer").innerHTML = "These strings are anagrams!";
 			return true;
 		}
 	}
