@@ -24,7 +24,7 @@ function CheckAnagram(){
 
 		if(wordOne.split("").sort().join("") === wordTwo.split("").sort().join("")){
 			alert("These strings are anagrams!");
-      return true;
+      			return true;
 		}
 	}
 }
