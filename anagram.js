@@ -11,6 +11,7 @@ function CheckAnagram(){
 	
 	if(wordOne === '' || wordTwo === ''){
 		document.getElementById("answer").value = "Whoops! Please enter two strings.";
+		console.log("Whoops");
 		return false;
 	}
 	
