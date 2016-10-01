@@ -1,7 +1,7 @@
 // Created by Jacob C. Scherba
 // September 30, 2016
 
-function CheckAnagram(){
+button.onclick(){
 
 	var wordOne = document.getElementbyID("wordOne").value,
 		wordTwo = document.getElementbyID("wordTwo").value;
