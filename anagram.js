@@ -23,7 +23,7 @@ function CheckAnagram(){
 	if(checkBlank && checkValid){
 
 		if(wordOne.split("").sort().join("") === wordTwo.split("").sort().join("")){
-			alert("These strings are anagrams!");
+			console.log("These strings are anagrams!");
       			return true;
 		}
 	}
