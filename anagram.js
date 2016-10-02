@@ -7,7 +7,9 @@ function CheckAnagram(){
 		bottomWord = document.getElementById("wordTwo").value;
 
 	console.log(topWord);
+	
 	console.log(typeof(topWord));
+	console.log("fuck");
 	console.log(bottomWord);
 	
 	if(topWord === '' || bottomWord === ''){
