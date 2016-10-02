@@ -9,7 +9,7 @@ function CheckAnagram(){
 	console.log(topWord);
 	console.log(bottomWord);
 	
-	if(topWord == '' || bottomWord == ''){
+	if(topWord == ' ' || bottomWord == ' '){
 		document.getElementById("answer").innerHTML = "Whoops! Please enter two strings.";
 		return false;
 	}
