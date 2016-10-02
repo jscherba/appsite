@@ -9,7 +9,7 @@ function CheckAnagram(){
 	console.log(wordOne);
 	console.log(wordTwo);
 	
-	if(wordOne === '' || wordTwo === ''){
+	if(wordOne.value === '' || wordTwo.value === ''){
 		document.getElementById("answer").value = "Whoops! Please enter two strings.";
 		console.log("Whoops");
 		return false;
@@ -17,7 +17,7 @@ function CheckAnagram(){
 	
 
 	
-	else if (/[a-zA-Z]/.test(wordOne) == false || /[a-zA-Z]/.test(wordTwo) == false) {
+	else if (/[a-zA-Z]/.test(wordOne.value) == false || /[a-zA-Z]/.test(wordTwo.value) == false) {
 			document.getElementById("answer").value = "Please only enter letters in your strings!";
 			return false;
 	}
@@ -25,7 +25,7 @@ function CheckAnagram(){
 
 	else {
 
-		if(wordOne.split("").sort().join("") === wordTwo.split("").sort().join("")){
+		if(wordOne.value.split("").sort().join("") === wordTwo.value.split("").sort().join("")){
 			document.getElementById("answer").value = "These strings are anagrams!";
 			console.log(document.getElementById("answer").value);
 			return true;
