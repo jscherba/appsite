@@ -7,9 +7,6 @@ function CheckAnagram(){
 		bottomWord = document.getElementById("wordTwo").value;
 
 	console.log(topWord);
-	
-	console.log(typeof(topWord));
-	console.log("fuck");
 	console.log(bottomWord);
 	
 	if(topWord === '' || bottomWord === ''){
@@ -27,7 +24,7 @@ function CheckAnagram(){
 
 	else {
 
-		if(topWord.value.split("").sort().join("") === bottomWord.value.split("").sort().join("")){
+		if(topWord.split("").sort().join("") === bottomWord.split("").sort().join("")){
 			document.getElementById("answer").value = "These strings are anagrams!";
 			console.log(document.getElementById("answer").value);
 			return true;
