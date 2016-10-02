@@ -16,7 +16,7 @@ function CheckAnagram(){
 	
 
 	
-	else if (!/[^a-zA-Z]/.test(topWord) || !/[^a-zA-Z]/.test(bottomWord)) {
+	else if (/[^a-zA-Z]/.test(topWord) || /[^a-zA-Z]/.test(bottomWord)) {
 			document.getElementById("answer").value = "Please only enter letters in your strings!";
 			console.log("Fucker");
 			return false;
