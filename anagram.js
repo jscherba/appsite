@@ -30,5 +30,8 @@ function CheckAnagram(){
 			console.log(document.getElementById("answer").value);
 			return true;
 		}
+		else {
+			console.log("These are not anagrams!");
+		}
 	}
 }
