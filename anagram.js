@@ -10,14 +10,14 @@ function CheckAnagram(){
 	console.log(bottomWord);
 	
 	if(topWord == '' || bottomWord == ''){
-		document.getElementById("answer").value = "Whoops! Please enter two strings.";
+		document.getElementById("answer").innerHTML = "Whoops! Please enter two strings.";
 		return false;
 	}
 	
 
 	
 	else if (/[^a-zA-Z]/.test(topWord) || /[^a-zA-Z]/.test(bottomWord)) {
-			document.getElementById("answer").value = "Please only enter letters in your strings!";
+			document.getElementById("answer").innerHTML = "Please only enter letters in your strings!";
 			console.log("Fucker");
 			return false;
 	}
@@ -26,11 +26,12 @@ function CheckAnagram(){
 	else {
 
 		if(topWord.split("").sort().join("") === bottomWord.split("").sort().join("")){
-			document.getElementById("answer").value = "These strings are anagrams!";
+			document.getElementById("answer").innerHTML = "These strings are anagrams!";
 			console.log(document.getElementById("answer").value);
 			return true;
 		}
 		else {
+			document.getElementById("answer").innerHTML = "These strings are not anagrams!";
 			console.log("These are not anagrams!");
 		}
 	}
