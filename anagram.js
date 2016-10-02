@@ -9,14 +9,14 @@ function CheckAnagram(){
 	console.log(topWord);
 	console.log(bottomWord);
 	
-	if(topWord === '' || bottomWord === ''){
+	if(topWord == '' || bottomWord == ''){
 		document.getElementById("answer").value = "Whoops! Please enter two strings.";
 		return false;
 	}
 	
 
 	
-	else if (/[a-zA-Z]/.test(topWord) == false || /[a-zA-Z]/.test(bottomWord) == false) {
+	else if (/^[a-zA-Z]+$/.test(topWord) == false || /[a-zA-Z]/.test(bottomWord) == false) {
 			document.getElementById("answer").value = "Please only enter letters in your strings!";
 			return false;
 	}
